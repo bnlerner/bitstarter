@@ -3,7 +3,12 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-fs.readFile('index.html',buffer.write());  
+fs.readFile("index.html","utf-8",function (err,data) {
+	if (err) throw err;
+	console.log(data);
+});
+//buffer.toString("utf-8",0,12);
+  
 //response.send('Hello World2!');
 });
 
