@@ -99,7 +99,15 @@
         </style>
       </head>
     <body>
-		
+		<!-- Facebook like button> -->
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>		
 		
 		<!-- Mobile-friendly navbar adapted from example. -->
 		<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
@@ -178,10 +186,10 @@
 			<div class="span8 offset2 social">				
 				<!-- social buttons are not included in default bootstrap -->
 				<!-- http://twitter.github.io/bootstrap/bass-cc.html#buttons -->
-				<button class="btn btn-twitter" href="https://www.twitter.com/optilawn">
-					<i class="icon-twitter"></i> | Twitter</button>
-				<button class="btn btn-facebook" href="https://www.facebook.com/pages/Opti-Lawn/647258301954736">
-					<i class="icon-facebook"></i> | Facebook</button>
+				<button class="btn btn-twitter">
+					<i class="icon-twitter" href="https://www.twitter.com/optilawn"></i> | Twitter</button>
+				<button class="btn btn-facebook"><i class="icon-facebook" href="https://www.facebook.com/pages/Opti-Lawn/647258301954736"></i> | Facebook</button>
+			<div class="fb-like" data-href="https://www.facebook.com/pages/Opti-Lawn/647258301954736" data-send="true" data-width="450" data-show-faces="true">			
 			</div>
 		</div>
 	</div>
@@ -189,7 +197,7 @@
 	
 	<div clas="row-fluid section1">
 		<div class="span5 offset1 asset">
-			<img class="img-polaroid" src="http://placehold.it/480x300">
+			<img class="img-polaroid" src="http://i.imgur.com/ICeNXTO.jpg">
 		</div>
 		<div class="span5 copy">
 			<p>
